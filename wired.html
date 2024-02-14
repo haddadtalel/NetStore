@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Net Store</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html" id="logo"><span id="span1">N</span>et <span>Store</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><img src="./images/menu.png" alt="" width="30px"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Cloud.html">Cloud</a></li>
+            <li><a class="dropdown-item" href="wirless.html">Wireless Acess</a></li>
+            <li><a class="dropdown-item" href="wired.html">Wired Access</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <form class="d-flex" id="search">
+              <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+      </ul>  
+        <ul class="navbar-nav me-4 mb-2 mb-lg-0">
+        <li class="loginicons">               
+          <a class="icons" href="sign-in.html">Sign in <span><i class="bi bi-box-arrow-in-right"></i></span></a>
+        </li>
+        <li class="registericons">
+          <a class="icons" href="sign-up.html">Sign up <span><i class="bi bi-plus-square"></i></span></a>
+         </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<!-- navbar -->
+<div class="grid-container">
+    <div class="left-sidebar">  
+        <div class="filter-title" id="price-title">Price</div>
+        <div class="filter-options" id="price-options">
+            <label for="price-range">Price Range:</label><br>
+            <input type="range" id="price-range" name="price" min="100" max="10000" step="100" value="100">
+            <span id="price-output">$100</span> - <span id="price-output-max">$10000</span>
+        </div>
+        
+    
+        <div class="filter-title" id="category-title">Category</div>
+        <div class="filter-options" id="category-options">
+            <label><input type="checkbox" name="category" value="elec"> Wi-Fi</label><br>
+            <label><input type="checkbox" name="category" value="fash"> Security</label><br>
+            <label><input type="checkbox" name="category" value="furn"> Access point</label><br>
+        </div>
+    
+       
+    
+        <div class="filter-title" id="marque-title">Marque</div>
+        <div class="filter-options" id="marque-options">
+            <label><input type="checkbox" name="marque" value="mqa1"> CISCO</label><br>
+            <label><input type="checkbox" name="marque" value="mqa2"> Netgear</label><br>
+            <label><input type="checkbox" name="marque" value="mqa3"> Fortinet</label><br>
+            <label><input type="checkbox" name="marque" value="mqa3"> DAHUA</label><br>
+    
+        </div>
+      </div>
+  <div class="right-content--1 ">
+    <div class="col-md-8 py-4 py-md-0">
+      <div class="card">
+        <img src="./images/fortinet_switch.jpg" alt="" height="225" width="225">
+        <div class="card-body">
+          <h3 class="text-center">FortiSwitch 148F-FPOE     </h3>
+          <p class="text-center">FORTINET FORTISWITCH 148F-FPOE NETWORK SWITCH , 48 PORT MANAGED SWITCH , RACK MOUNTABLE</p>
+        
+          <!-- This div aligns the button to the right -->
+          <div class="row">
+            <div class="col text-start">
+              <h2>7000 DTN</h2>
+            </div>
+            <div class="col text-end">
+              <button type="button" class="btn btn-outline-success">Shop</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-content--2 ">
+    <div class="col-md-8 py-4 py-md-0">
+      <div class="card">
+        <img src="./images/cisco-network-switch-.jpg" alt="" height="225" width="225">
+        <div class="card-body">
+          <h3 class="text-center">Cisco Network Switch RS 18000</h3>
+          <p class="text-center">Cisco Network Switch 8 port , easy to carry </p>
+         
+          <!-- This div aligns the button to the right -->
+          <div class="row">
+            <div class="col text-start">
+              <h2>6000 DTN</h2>
+            </div>
+            <div class="col text-end">
+              <button type="button" class="btn btn-outline-success">Shop</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-content--3 ">
+    <div class="col-md-8 py-4 py-md-0">
+      <div class="card">
+        <img src="./images/PFS3010_8GT_96_WEB.png" alt="" height="225" width="225">
+        <div class="card-body">
+          <h3 class="text-center">DAHUA PoE switch</h3>
+          <p class="text-center">The eight-port ummanaged desktop gigabit switch is designed for field transmission applications and for high-definition video. </p>
+          
+          <!-- This div aligns the button to the right -->
+          <div class="row">
+            <div class="col text-start">
+              <h2>500 DTN</h2>
+            </div>
+            <div class="col text-end">
+              <button type="button" class="btn btn-outline-success">Shop</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</div>
+
+
+
+   <!-- footer -->
+   <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Net Store</h3>
+            <p>
+              Tunis <br>
+              Tunisia <br>
+            </p>
+            <strong>Phone:</strong> +216 XX XXX XXX <br>
+            <strong>Email:</strong> Net.Store@gmail.com <br>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Usefull Links</h4>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="home.html#product-cards">Solutions</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policey</a></li>
+             </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+           <ul>
+            <li><a href="Cloud.html">Cloud</a></li>
+            <li><a href="wirless.html">Wireless Acess</a></li>
+            <li><a href="wired.html">Wired Acess</a></li>
+           <ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <strong>Contact us on !</strong>
+            <div class="socail-links mt-3">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-skype"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bot-container">
+      <div class="copyright"><strong>Net Store</strong>
+        &copy; 2024
+      </div>
+      <div class="credits">
+        Designed by <a href="#">T & F</a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+  <script>
+    $(".filter-title").on('click', function () {
+        $(this).next(".filter-options").stop().slideToggle(400);
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
